@@ -1,0 +1,519 @@
+h1 {
+  color: #444B54;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+h2 {
+  color: #FD8F48;
+  font-size: 30px;
+  text-align: center;
+}
+
+h3 {
+  color: #444B54;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+
+h4 {
+  color: #FD8F48;
+  font-size: 22px;
+  text-align: center;
+}
+
+header, section {
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.button {
+  background-color: #FD8F48;
+  border-radius: 7px;
+  padding: 6px 20px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.button:hover {
+  background-color: #e68140;
+  transition: 0.2s;
+}
+
+.card-button {
+  width: 80px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  text-align: center;
+  display: block;
+  margin: auto;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.card-button:hover {
+  background-color: #ffecc7;
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 18px;
+  color: #444B54;
+}
+
+.close:hover {
+  cursor: pointer;
+  color: #FD8F48;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Catamaran', sans-serif;
+}
+
+/* HEADER */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container .logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+}
+
+header .container .logo a {
+  display: flex;
+  align-items: center;
+  color: #444B54;
+}
+
+header .container .logo a img {
+  height: 35px;
+  margin-right: 5px;
+}
+
+header .container .logo a p {
+  margin-top: 5px;
+}
+
+header .container .logo a:hover {
+  color: #FD8F48;
+  transition: 0.2s;
+}
+
+header .container .logo a:hover img {
+  transform: rotate(10deg);
+  transition: 0.4s;
+}
+
+header .container nav ul {
+  display: flex;
+}
+
+header .container nav ul li {
+  margin: 10px 15px;
+}
+
+header .container nav ul li a {
+  color: #444B54;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+header .container nav ul li a:hover {
+  color: #FD8F48;
+  transition: 0.2s;
+}
+
+/* ABOUT */
+#about .container {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+}
+
+#about .container .about-left {
+  width: 50%;
+}
+
+#about .container .about-left p {
+  color: #444B54;
+  text-align: center;
+}
+
+#about .container .about-left .about-button {
+  margin-top: 15px;
+  text-align: center;
+}
+
+#about .container .about-right {
+  width: 50%;
+  text-align: center;
+}
+
+#about .container .about-right img {
+  height: 300px;
+  margin-left: 50px;
+}
+
+/* BENEFITS */
+#benefits {
+  background-color: #fff7f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#benefits .benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  max-width: 800px;
+}
+
+#benefits .benefits-list .benefits-card {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+#benefits .benefits-list .benefits-card img {
+  height: 35px;
+}
+
+#benefits .benefits-list .benefits-card h4 {
+  font-size: 16px;
+}
+
+#benefits .benefits-list .benefits-card p {
+  line-height: 1.2;
+}
+
+/* TABLE */
+#table {
+  position: relative;
+}
+
+#table .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#table .container .table-description {
+  max-width: 800px;
+}
+
+#table .container .table-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  text-align: center;
+  max-width: 800px;
+}
+
+#table .container .table-grid .card {
+  border-radius: 7px;
+  margin: 10px;
+}
+
+#table .container .table-grid .card img {
+  height: 35px;
+}
+
+#table .container .table-grid .card p {
+  color: #444B54;
+}
+
+#table #food-modal {
+  position: fixed;
+  width: 300px;
+  height: 320px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50.1%, -50%);
+  z-index: +1;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0px 0px 30px 0px rgba(116, 116, 116, 0.3);
+}
+
+#table #food-modal .f-content {
+  position: relative;
+  padding: 10px;
+}
+
+#table #food-modal .f-content .f-title {
+  text-align: center;
+  font-size: 24px;
+  color: #FD8F48;
+  font-weight: 700;
+}
+
+#table #food-modal .f-content .f-main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#table #food-modal .f-content .f-main .f-card {
+  margin: 5px;
+}
+
+#table #food-modal .f-content .f-main .f-card .fn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+#table #food-modal .f-content .f-main .f-card .fn span {
+  font-size: 12px;
+  margin-left: 1px;
+}
+
+#table #food-modal .f-content .f-main .f-card .fn-1 {
+  color: #63B3ED;
+  border: 1px solid #63B3ED;
+}
+
+#table #food-modal .f-content .f-main .f-card .fn-2 {
+  color: #68D391;
+  border: 1px solid #68D391;
+}
+
+#table #food-modal .f-content .f-main .f-card .fn-3 {
+  color: #F6AD55;
+  border: 1px solid #F6AD55;
+}
+
+#table #food-modal .f-content .f-main .f-card .fn-4 {
+  color: #B794F4;
+  border: 1px solid #B794F4;
+}
+
+#table #food-modal .f-content .f-main .f-card .f-name {
+  margin-top: 5px;
+  font-size: 14px;
+  text-align: center;
+  color: #444B54;
+}
+
+#table #food-modal .f-content .f-additional {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+#table #food-modal .f-content .f-additional .addit {
+  margin: 5px;
+  padding: 3px;
+  width: 110px;
+  font-size: 14px;
+  color: #444B54;
+}
+
+#table #food-modal .f-content .f-additional .addit p:nth-child(1) {
+  font-size: 30px;
+}
+
+#table #food-modal .f-content .f-additional .addit span {
+  font-size: 20px;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff7f0;
+  padding: 20px 0;
+}
+
+footer nav ul {
+  display: flex;
+}
+
+footer nav ul li {
+  margin: 10px 15px;
+}
+
+footer nav ul li a {
+  color: #444B54;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+footer nav ul li a:hover {
+  color: #FD8F48;
+  transition: 0.2s;
+}
+
+footer i {
+  margin-right: 5px;
+}
+
+footer .social {
+  display: flex;
+}
+
+footer .social a {
+  margin: 5px 0;
+}
+
+footer .social a i {
+  font-size: 22px;
+  color: #444B54;
+  margin: 5px;
+}
+
+footer .social a:hover i {
+  color: #FD8F48;
+}
+
+/* Media Queries */
+@media (max-width: 1300px) {
+  .container {
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+  #about .container {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #about .container .about-left {
+    width: 100%;
+    text-align: center;
+  }
+  #about .container .about-left .about-button {
+    display: none;
+  }
+  #about .container .about-right {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  #about .container .about-right img {
+    margin: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  .container {
+    width: 95%;
+  }
+  header, section {
+    margin-bottom: 10px;
+  }
+  header .container {
+    display: block;
+    padding-top: 0;
+    margin: auto;
+  }
+  header .container .logo {
+    display: flex;
+    justify-content: center;
+  }
+  header .container nav {
+    display: flex;
+    justify-content: center;
+  }
+  #about .container {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #about .container .about-left {
+    width: 100%;
+    text-align: center;
+  }
+  #about .container .about-left .about-button {
+    display: none;
+  }
+  #about .container .about-right {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  #about .container .about-right img {
+    height: 100px;
+    margin: 0;
+  }
+  #benefits .benefits-list .benefits-card {
+    width: 40%;
+    margin: 5px;
+  }
+  #table .container .table-description {
+    max-width: 800px;
+  }
+  #table .container .table-grid {
+    grid-template-columns: auto auto auto;
+    max-width: 800px;
+  }
+  #table .container .table-grid .card {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 350px) {
+  header .container nav ul li a {
+    font-size: 14px;
+  }
+  footer nav ul li a {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

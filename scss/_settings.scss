@@ -1,0 +1,92 @@
+$grey: #444B54;
+$orange: #FD8F48;
+$light-orange: #ffecc7;
+
+h1 {
+    color: $grey;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+h2 {
+    color: $orange;
+    font-size: 30px;
+    text-align: center;
+}
+
+h3 {
+    color: $grey;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+
+h4 {
+    color: $orange;
+    font-size: 22px;
+    text-align: center;
+}
+
+header, section {
+    margin-bottom: 50px;
+}
+
+.container {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.button {
+    background-color: $orange;
+    border-radius: 7px;
+    padding: 6px 20px;
+    color: #fff;
+    font-size: 18px;
+}
+.button:hover {
+    background-color: #e68140;
+    transition: 0.2s;
+}
+
+.card-button {
+    width: 80px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    text-align: center;
+    display: block;
+    margin: auto;
+    border-radius: 7px;
+    padding: 10px;
+}
+.card-button:hover {
+    background-color: $light-orange;
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 18px;
+    color: $grey;
+}
+.close:hover {
+    cursor: pointer;
+    color: $orange
+}
